@@ -1,0 +1,20 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/Assignment.umap",
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/FirstPerson/Blueprints/BP_Item.uasset",
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/FirstPerson/Blueprints/BPI_Interactable.uasset",
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/FirstPerson/Blueprints/WBP_InventoryBar.uasset",
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/FirstPerson/Blueprints/S_ItemData.uasset",
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/Variant_Horror/Blueprints/BP_FP_Horror.uasset",
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/FirstPerson/Blueprints/BP_Door.uasset",
+				"C:/Users/zivra/OneDrive/school/degree/CGRP/Unreal/Assignment/Content/FirstPerson/Blueprints/EInteractionType.uasset"
+			]
+		}
+	]
+}
