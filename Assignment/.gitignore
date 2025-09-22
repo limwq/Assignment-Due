@@ -1,0 +1,64 @@
+# Ignore user-specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build / cache / temp files
+[Bb]uild/
+[Bb]inaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+*.pdb
+*.ipch
+*.db
+*.VC.db
+*.opendb
+
+# Ignore precompiled headers
+*.pch
+
+# Ignore generated project files
+*.xcodeproj
+*.xcworkspace
+*.VC.db
+*.VC.opendb
+
+# Ignore backup / autosaves
+*.bak
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+
+# Ignore Unreal local settings
+*.ini.local
+*.ini.save
+*.autosave
+
+# Ignore crash / profiling
+*.dmp
+*.memdump
+*.prof
+
+# Ignore packaged builds
+*.pak
+*.pak.info
+*.ucas
+*.utoc
+
+# Ignore other common large temp files
+*.obj
+*.iobj
+*.ipdb
+*.ilk
+*.idb
+*.tlog
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
