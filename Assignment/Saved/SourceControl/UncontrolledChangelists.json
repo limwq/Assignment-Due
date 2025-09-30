@@ -11,7 +11,12 @@
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_DropOff.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Player/BP_Player.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Assignment.umap",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset"
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BPI_Interactable.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Item.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Laptop.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Locker.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Door.uasset"
 			]
 		}
 	]
