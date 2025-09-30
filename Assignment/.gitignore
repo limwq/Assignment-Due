@@ -62,3 +62,10 @@ Saved/
 
 # Ignore Windows system files
 Thumbs.db
+
+# --- Unreal project specific ignores ---
+# Ignore Generated Folders inside any Unreal Project (e.g. Assignment/)
+*/Intermediate/*
+*/Saved/*
+*/DerivedDataCache/*
+*/Binaries/*
