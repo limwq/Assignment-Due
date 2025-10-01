@@ -5,21 +5,27 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Material/glass.uasset",
-				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Material/glass01.uasset",
-				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Assignment.umap",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_UIManager.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Note.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/EInteractionType.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_DropOff.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Player/BP_Player.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Assignment.umap",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BPI_Interactable.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Item.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Laptop.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Locker.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Door.uasset"
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Door.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Alarm.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/FX/NS_AlarmFlash.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Material/Glow.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/M_SimpleGlow.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/M_GradientGlow.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Map/Box030.uasset",
+				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Material/glass.uasset",
+				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Material/glass01.uasset",
+				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Assignment.umap",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset"
 			]
 		}
 	]
