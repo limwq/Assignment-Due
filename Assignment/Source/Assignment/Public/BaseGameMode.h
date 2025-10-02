@@ -5,6 +5,14 @@
 #include "GameFramework/GameModeBase.h"
 #include "BaseGameMode.generated.h"
 
+// === Timer rule ===
+UENUM(BlueprintType)
+enum class ETimerCondition : uint8
+{
+    LoseOnTimeout UMETA(DisplayName = "Lose On Timeout"),
+    WinOnTimeout  UMETA(DisplayName = "Win On Timeout")
+};
+
 UCLASS()
 class ASSIGNMENT_API ABaseGameMode : public AGameModeBase
 {
@@ -18,12 +26,16 @@ protected:
 
     // === Timer ===
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Timer")
-    float LevelTimeLimit = 300.0f; // Default: 5 minutes
+    float LevelTimeLimit = 300.0f; // default 5 min
 
-    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Timer")
+    UPROPERTY(BlueprintReadOnly, Category = "Timer")
     float TimeRemaining;
 
     FTimerHandle CountdownTimerHandle;
+
+    // Win/Lose condition
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Timer")
+    ETimerCondition TimerCondition;
 
     // === UI ===
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
@@ -32,15 +44,11 @@ protected:
     UPROPERTY()
     class UUserWidget* TimerWidget;
 
-    // === Scene ===
-    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GameMode")
-    FName LastLevelName;
-
     // === Functions ===
     void HandleCountdown();
 
-    UFUNCTION(BlueprintCallable, Category = "Timer")
-    void OnTimerFinished();
+    UFUNCTION(BlueprintCallable, Category = "GameMode")
+    virtual void OnTimerFinished();
 
 public:
     // === Scene / Level transitions ===
@@ -53,7 +61,6 @@ public:
     UFUNCTION(BlueprintCallable, Category = "GameMode")
     void GoToVictoryScene();
 
-    // Getter for TimeRemaining (for UI)
-    UFUNCTION(BlueprintCallable, Category = "Timer")
+    UFUNCTION(BlueprintPure, Category = "Timer")
     float GetTimeRemaining() const { return TimeRemaining; }
 };

@@ -3,22 +3,23 @@
 #include "Blueprint/UserWidget.h"
 #include "Kismet/GameplayStatics.h"
 #include "TimerManager.h"
+#include "SceneManager.h"
 
 ABaseGameMode::ABaseGameMode()
 {
-    // Default values
     LevelTimeLimit = 300.0f;
     TimeRemaining = LevelTimeLimit;
+    TimerCondition = ETimerCondition::LoseOnTimeout; // default rule
 }
 
 void ABaseGameMode::BeginPlay()
 {
     Super::BeginPlay();
 
-    // Initialize remaining time
+    // Reset time
     TimeRemaining = LevelTimeLimit;
 
-    // Create & add the timer widget if assigned
+    // Create timer UI
     if (TimerWidgetClass)
     {
         TimerWidget = CreateWidget<UUserWidget>(GetWorld(), TimerWidgetClass);
@@ -28,14 +29,23 @@ void ABaseGameMode::BeginPlay()
         }
     }
 
-    // Start countdown ticking every 1 second
+    // Start countdown
     GetWorldTimerManager().SetTimer(
         CountdownTimerHandle,
         this,
         &ABaseGameMode::HandleCountdown,
-        1.0f,   // tick every 1 second
-        true    // looping
+        1.0f,
+        true
     );
+
+    // Lock input to game
+    APlayerController* PC = GetWorld()->GetFirstPlayerController();
+    if (PC)
+    {
+        FInputModeGameOnly InputMode;
+        PC->SetInputMode(InputMode);
+        PC->bShowMouseCursor = false;
+    }
 }
 
 void ABaseGameMode::HandleCountdown()
@@ -53,19 +63,24 @@ void ABaseGameMode::HandleCountdown()
 
 void ABaseGameMode::OnTimerFinished()
 {
-    // Default behavior: go to fail scene when timer ends
-    GoToFailScene();
+    if (TimerCondition == ETimerCondition::LoseOnTimeout)
+    {
+        GoToFailScene();
+    }
+    else if (TimerCondition == ETimerCondition::WinOnTimeout)
+    {
+        GoToVictoryScene();
+    }
 }
 
 void ABaseGameMode::GoToLevel(FName LevelName)
 {
-    LastLevelName = LevelName;
     UGameplayStatics::OpenLevel(this, LevelName);
 }
 
 void ABaseGameMode::GoToFailScene()
 {
-    UGameplayStatics::OpenLevel(this, "FailScene");
+    USceneManager::GoToFail(this);
 }
 
 void ABaseGameMode::GoToVictoryScene()
