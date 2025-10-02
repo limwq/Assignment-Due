@@ -5,6 +5,7 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+<<<<<<< Updated upstream
 				"C:/sem2unreal/CGRP/Assignment/Content/Sprite-Audio/guardAudio/ghostly-scary-whisper-i-am-coming-for-you-Heard_voice.uasset",
 				"C:/sem2unreal/CGRP/Assignment/Content/Sprite-Audio/guardAudio/punch_no_impact.uasset",
 				"C:/sem2unreal/CGRP/Assignment/Content/Sprite-Audio/guardAudio/punch_with_impact.uasset",
@@ -29,6 +30,21 @@
 				"C:/sem2unreal/CGRP/Assignment/Content/Sprite-Audio/bgm/chasing_bgm.uasset",
 				"C:/sem2unreal/CGRP/Assignment/Content/Sprite-Audio/bgm/environment.uasset",
 				"C:/sem2unreal/CGRP/Assignment/Content/Sprite-Audio/bgm/lv2_bgm.uasset",
+=======
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_UIManager.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Note.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/EInteractionType.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_DropOff.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Player/BP_Player.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Assignment.umap",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BPI_Interactable.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Item.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Laptop.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Locker.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Door.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_Timer.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_BaseGameMode.uasset",
+>>>>>>> Stashed changes
 				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Material/glass01.uasset",
 				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Assignment.umap",
 				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Locker.uasset",
@@ -498,18 +514,7 @@
 				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Map/Level2_building/Box088.uasset",
 				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Map/Level2_building/Cylinder005.uasset",
 				"C:/Users/Victus/OneDrive - Asia Pacific University/Documents/Computer Graphics/CGRP/Assignment/Content/Material/glass.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_UIManager.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Note.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/EInteractionType.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_DropOff.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Player/BP_Player.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Assignment.umap",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BPI_Interactable.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Item.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Laptop.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Locker.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Door.uasset"
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset"
 			]
 		}
 	]
