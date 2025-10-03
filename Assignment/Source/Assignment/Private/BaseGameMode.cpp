@@ -75,7 +75,9 @@ void ABaseGameMode::OnTimerFinished()
 
 void ABaseGameMode::GoToLevel(FName LevelName)
 {
-    UGameplayStatics::OpenLevel(this, LevelName);
+    // Use SceneManager with fade
+    USceneManager::GoToLevel(this, LevelName);
+
 }
 
 void ABaseGameMode::GoToFailScene()
@@ -85,5 +87,5 @@ void ABaseGameMode::GoToFailScene()
 
 void ABaseGameMode::GoToVictoryScene()
 {
-    UGameplayStatics::OpenLevel(this, "VictoryScene");
+    USceneManager::GoToVictory(this);
 }

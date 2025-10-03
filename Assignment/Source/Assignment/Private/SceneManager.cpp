@@ -1,54 +1,44 @@
 #include "SceneManager.h"
+#include "Kismet/GameplayStatics.h"
 #include "MyGameInstance.h"
 
-void USceneManager::OpenScene(UObject* WorldContext, const FString& SceneName)
+void USceneManager::GoToLevel(UObject* WorldContext, FName LevelName)
 {
-    if (UWorld* World = WorldContext->GetWorld())
+    if (!WorldContext) return;
+
+    if (UMyGameInstance* GI = WorldContext->GetWorld()->GetGameInstance<UMyGameInstance>())
     {
-        UGameplayStatics::OpenLevel(World, FName(*SceneName));
+        GI->SaveLastLevel(LevelName);
     }
+
+    UGameplayStatics::OpenLevel(WorldContext, LevelName);
 }
 
 void USceneManager::GoToFail(UObject* WorldContext)
 {
-    if (UWorld* World = WorldContext->GetWorld())
+    USceneManager::GoToLevel(WorldContext, "FailScene");
+}
+
+void USceneManager::GoToVictory(UObject* WorldContext)
+{
+    USceneManager::GoToLevel(WorldContext, "VictoryScene");
+}
+
+void USceneManager::RetryLastLevel(UObject* WorldContext)
+{
+    if (!WorldContext) return;
+
+    if (UMyGameInstance* GI = WorldContext->GetWorld()->GetGameInstance<UMyGameInstance>())
     {
-        // Save current map
-        if (UGameInstance* GI = World->GetGameInstance())
+        if (!GI->LastLevelName.IsNone())
         {
-            if (UMyGameInstance* MyGI = Cast<UMyGameInstance>(GI))
-            {
-                FString CurrentName = World->GetMapName();
-                // Remove PIE prefix in editor
-                if (CurrentName.StartsWith(World->StreamingLevelsPrefix))
-                {
-                    CurrentName.RemoveFromStart(World->StreamingLevelsPrefix);
-                }
-                MyGI->SaveLastScene(CurrentName);
-            }
+            USceneManager::GoToLevel(WorldContext, GI->LastLevelName);
         }
-        // Go to Fail scene
-        UGameplayStatics::OpenLevel(World, TEXT("Fail"));
     }
 }
 
-void USceneManager::RetryLast(UObject* WorldContext)
+void USceneManager::GoToMainMenu(UObject* WorldContext)
 {
-    if (UWorld* World = WorldContext->GetWorld())
-    {
-        if (UGameInstance* GI = World->GetGameInstance())
-        {
-            if (UMyGameInstance* MyGI = Cast<UMyGameInstance>(GI))
-            {
-                FString LastScene = MyGI->GetLastScene();
-                if (!LastScene.IsEmpty())
-                {
-                    UGameplayStatics::OpenLevel(World, FName(*LastScene));
-                    return;
-                }
-            }
-        }
-        // fallback to MainMenu if no saved scene
-        UGameplayStatics::OpenLevel(World, TEXT("MainMenu"));
-    }
+    USceneManager::GoToLevel(WorldContext, "MainMenu");
 }
+
