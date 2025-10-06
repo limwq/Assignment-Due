@@ -1,27 +1,12 @@
 #include "MyGameInstance.h"
-#include "Blueprint/UserWidget.h"
 
-void UMyGameInstance::SaveLastLevel(const FName& LevelName)
+void UMyGameInstance::SaveLastLevel(const FString& LevelName)
 {
     LastLevelName = LevelName;
+    UE_LOG(LogTemp, Warning, TEXT("GameInstance: Saved last level: %s"), *LastLevelName);
 }
 
-FName UMyGameInstance::GetLastLevel() const
+FString UMyGameInstance::GetLastLevel() const
 {
     return LastLevelName;
-}
-
-void UMyGameInstance::Init()
-{
-    Super::Init();
-
-    // Create the scene fader widget if assigned
-    if (SceneFaderClass)
-    {
-        SceneFader = CreateWidget<UUserWidget>(this, SceneFaderClass);
-        if (SceneFader)
-        {
-            SceneFader->AddToViewport(100); // high ZOrder so it overlays everything
-        }
-    }
 }

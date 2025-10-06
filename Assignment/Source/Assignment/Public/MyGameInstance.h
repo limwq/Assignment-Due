@@ -10,26 +10,13 @@ class ASSIGNMENT_API UMyGameInstance : public UGameInstance
     GENERATED_BODY()
 
 public:
-    // Store last level visited (for Retry button)
+    // Last level stored as FString (safer between loads)
     UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Scene")
-    FName LastLevelName;
+    FString LastLevelName;
 
-    // Reference to Scene Fader widget
-    UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Scene")
-    class UUserWidget* SceneFader;
-
-    // Scene fader widget class (set in BP defaults)
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Scene")
-    TSubclassOf<class UUserWidget> SceneFaderClass;
-
-    // Save the last level name
     UFUNCTION(BlueprintCallable, Category = "Scene")
-    void SaveLastLevel(const FName& LevelName);
+    void SaveLastLevel(const FString& LevelName);
 
-    // Get the last level name
     UFUNCTION(BlueprintCallable, Category = "Scene")
-    FName GetLastLevel() const;
-
-protected:
-    virtual void Init() override;
+    FString GetLastLevel() const;
 };
