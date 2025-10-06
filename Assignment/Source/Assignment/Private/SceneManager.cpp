@@ -6,9 +6,16 @@ void USceneManager::GoToLevel(UObject* WorldContext, FName LevelName)
 {
     if (!WorldContext) return;
 
-    if (UMyGameInstance* GI = WorldContext->GetWorld()->GetGameInstance<UMyGameInstance>())
+    UWorld* World = WorldContext->GetWorld();
+    if (!World) return;
+
+    FString MapName = World->GetMapName();
+    MapName.RemoveFromStart(World->StreamingLevelsPrefix); // Removes UEDPIE_0_
+
+    if (UMyGameInstance* GI = World->GetGameInstance<UMyGameInstance>())
     {
-        GI->SaveLastLevel(LevelName);
+        // Save the CURRENT level (cleaned name)
+        GI->SaveLastLevel(MapName);
     }
 
     UGameplayStatics::OpenLevel(WorldContext, LevelName);
@@ -16,23 +23,33 @@ void USceneManager::GoToLevel(UObject* WorldContext, FName LevelName)
 
 void USceneManager::GoToFail(UObject* WorldContext)
 {
-    USceneManager::GoToLevel(WorldContext, "FailScene");
+    USceneManager::GoToLevel(WorldContext, "Fail");
 }
 
 void USceneManager::GoToVictory(UObject* WorldContext)
 {
-    USceneManager::GoToLevel(WorldContext, "VictoryScene");
+    USceneManager::GoToLevel(WorldContext, "Victory");
 }
 
 void USceneManager::RetryLastLevel(UObject* WorldContext)
 {
     if (!WorldContext) return;
 
-    if (UMyGameInstance* GI = WorldContext->GetWorld()->GetGameInstance<UMyGameInstance>())
+    UWorld* World = WorldContext->GetWorld();
+    if (!World) return;
+
+    if (UMyGameInstance* GI = World->GetGameInstance<UMyGameInstance>())
     {
-        if (!GI->LastLevelName.IsNone())
+        FString LastLevel = GI->GetLastLevel();
+
+        if (!LastLevel.IsEmpty())
         {
-            USceneManager::GoToLevel(WorldContext, GI->LastLevelName);
+            UE_LOG(LogTemp, Warning, TEXT("Retrying last level: %s"), *LastLevel);
+            USceneManager::GoToLevel(WorldContext, FName(*LastLevel));
+        }
+        else
+        {
+            UE_LOG(LogTemp, Warning, TEXT("No last level saved!"));
         }
     }
 }
@@ -41,4 +58,3 @@ void USceneManager::GoToMainMenu(UObject* WorldContext)
 {
     USceneManager::GoToLevel(WorldContext, "MainMenu");
 }
-
