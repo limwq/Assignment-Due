@@ -11,7 +11,26 @@
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_Victory.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_Timer.uasset",
 				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Player/BP_Player.uasset",
-				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_InventoryBar.uasset"
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_InventoryBar.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Laptop.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Door.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Sprite-Audio/ItemAudio/computer-startup-music-97699.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Sprite-Audio/ItemAudio/paper_sound.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Note.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/unreal_environment/end-table-01/source/OPM0002.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/unreal_environment/bar-table/source/Material__167.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Enemy/BP_Enemy.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/WBP_UIManager.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/UI_or_Icon/vignette_effect.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Enemy/Ai/AIC_Enemies.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Enemy/Ai/BT_Enemies.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Locker.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/FirstPerson/Blueprints/BP_Alarm.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Sprite-Audio/guardAudio/Enemywalking.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/Sprite-Audio/guardAudio/flesh-growing-horror-392360.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/UI_or_Icon/note_1.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/UI_or_Icon/note_2.uasset",
+				"C:/Users/zivra/OneDrive/Documents/GitHub/CGRP/Assignment/Content/UI_or_Icon/note_3.uasset"
 			]
 		}
 	]
