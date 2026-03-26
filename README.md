@@ -24,7 +24,7 @@ If you are reviewing my code, I was responsible for architecting the following s
 * **Character Controller (`BP_Player`)**: Scripted player movement, stamina management, and object pickup/validation logic.
 
 ## 🎮 Play the Game
-A playable build is available on [itch.io]([https://limwq.itch.io/assignment-due]).
+A playable build is available on [itch.io](https://limwq.itch.io/assignment-due).
 
 ## 🚀 How to Run the Project Locally
 1. Clone this repository.
